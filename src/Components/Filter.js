@@ -34,7 +34,7 @@ class Filter extends React.Component {
         //Call filter API
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filterRestaurants',
+            url: 'https://fierce-retreat-25052.herokuapp.com/filterRestaurants',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 mealtype_id: mealtype,
@@ -46,7 +46,7 @@ class Filter extends React.Component {
         }).catch(err => console.log(err))
        // Call location API
         axios({
-            url: 'http://localhost:2021/location',
+            url: 'https://fierce-retreat-25052.herokuapp.com/location',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -60,7 +60,7 @@ class Filter extends React.Component {
         const { mealtype, location, cuisine, lcost, hcost, page } = this.state;
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filterRestaurants',
+            url: 'https://fierce-retreat-25052.herokuapp.com/filterRestaurants',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
@@ -86,7 +86,7 @@ class Filter extends React.Component {
         const { mealtype, location, cuisine, sort, page, pageArr } = this.state;
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filterRestaurants',
+            url: 'https://fierce-retreat-25052.herokuapp.com/filterRestaurants',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
@@ -118,7 +118,7 @@ class Filter extends React.Component {
         }
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filterRestaurants',
+            url: 'https://fierce-retreat-25052.herokuapp.com/filterRestaurants',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
@@ -141,7 +141,7 @@ class Filter extends React.Component {
        const { mealtype,  cuisine, sort, page, lcost, hcost, pageArr } = this.state; 
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filterRestaurants',
+            url: 'https://fierce-retreat-25052.herokuapp.com/filterRestaurants',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
@@ -163,7 +163,7 @@ class Filter extends React.Component {
       
         axios({
             method: 'POST',
-            url: 'http://localhost:2021/filterRestaurants',
+            url: 'https://fierce-retreat-25052.herokuapp.com/filterRestaurants',
             headers: { 'Content-Type': 'application/json' },
             data: {
                 sort: sort,
