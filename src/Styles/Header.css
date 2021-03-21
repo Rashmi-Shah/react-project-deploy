@@ -1,0 +1,45 @@
+.header-logo {
+    text-align: center;
+    font-size: 29px;
+    color: red;
+    background: white;
+    width: 56px;
+    height: 47px;
+    border-radius: 50%;
+    /* position: absolute; */
+    /* top: 10%; */
+    margin-left: 2%;
+    float: left;
+    font-family: Poppins;
+    font-weight: bold;
+}
+.Login{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color:#ffffff;
+}
+.Create-an-account {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  .Rectangle {
+    width: 160px;
+    height: 46px;
+    margin: 0 0 0 26px;
+    padding: 12px 10px 11px 15px;
+    border-radius: 3px;
+    border: solid 1px #ffffff;
+  }
