@@ -46,7 +46,7 @@ class Details extends React.Component {
         const restaurantId = qs.restaurant;
 
         axios({
-            url: `https://fierce-retreat-25052.herokuapp.com/getRestaurantDetailsById/${restaurantId}`,
+            url: `https://sheltered-plains-34833.herokuapp.com/getRestaurantDetailsById/${restaurantId}`,
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -60,7 +60,7 @@ class Details extends React.Component {
         this.setState({ [state]: value })
         if (state == 'orderModalIsOpen') {
             axios({
-                url: `https://fierce-retreat-25052.herokuapp.com/item/${restaurantId}`,
+                url: `https://sheltered-plains-34833.herokuapp.com/item/${restaurantId}`,
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' }
 
@@ -134,7 +134,7 @@ class Details extends React.Component {
         form.remove()
     }
     getData = (data) => {
-        return fetch(`https://fierce-retreat-25052.herokuapp.com/payment`, {
+        return fetch(`http://localhost:2021/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",

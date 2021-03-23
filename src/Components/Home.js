@@ -17,7 +17,7 @@ class Home extends React.Component {
        // sessionStorage.setItem('locationId', undefined);//It clears the session variable
         sessionStorage.clear(); //another method to clear session variable
         axios({
-            url: 'https://fierce-retreat-25052.herokuapp.com/location',
+            url: 'https://sheltered-plains-34833.herokuapp.com/location',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -26,7 +26,7 @@ class Home extends React.Component {
             }).catch(err => console.log(err))
 
         axios({
-            url: 'https://fierce-retreat-25052.herokuapp.com/mealtypes',
+            url: 'https://sheltered-plains-34833.herokuapp.com/mealtypes',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
