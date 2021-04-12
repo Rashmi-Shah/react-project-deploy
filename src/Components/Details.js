@@ -134,7 +134,7 @@ class Details extends React.Component {
         form.remove()
     }
     getData = (data) => {
-        return fetch(`http://localhost:2021/payment`, {
+        return fetch(`https://sheltered-plains-34833.herokuapp.com/payment`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
